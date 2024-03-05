@@ -16,10 +16,7 @@ jobs:
         run: |
           echo "AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID" >> $GITHUB_ENV
           echo "AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY" >> $GITHUB_ENV
-          echo ${{ AWS_REGION }}
-        env:
-          AWS_REGION: ap-south-1
-          
+
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
