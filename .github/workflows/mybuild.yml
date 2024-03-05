@@ -12,6 +12,11 @@ jobs:
   check-awsamplify-version:
     runs-on: ubuntu-latest
     steps:
+      - name: set the aws 
+        run: |
+          echo "AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID" >> $GITHUB_ENV
+          echo "AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY" >> $GITHUB_ENV
+   
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
