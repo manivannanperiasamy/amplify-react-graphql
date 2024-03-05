@@ -7,7 +7,7 @@ on:
     branches:
       - main
     paths:
-      - 'amplify-react-graphql/src/**'
+      - '../../src/**'
 
 jobs:
   release:
