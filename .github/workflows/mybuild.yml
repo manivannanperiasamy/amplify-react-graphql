@@ -4,11 +4,6 @@ on:
   pull_request:
     types:
       - closed
-    branches:
-      - main
-    paths:
-      - 'amplify-react-graphql/src/**'
-
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
