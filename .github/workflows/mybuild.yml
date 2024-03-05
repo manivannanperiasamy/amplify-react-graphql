@@ -1,5 +1,5 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: awsamplify-github-actions
+run-name: ${{ github.actor }} is running GitHub Actions
 on:
   pull_request:
     types:
@@ -7,7 +7,7 @@ on:
     branches:
       - 'main'
 jobs:
-  check-bats-version:
+  check-awsamplify-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
