@@ -4,7 +4,6 @@ on:
   pull_request:
     types:
       - closed
-    branches: [ main ] 
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
