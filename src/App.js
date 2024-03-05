@@ -20,4 +20,5 @@ function App({ signOut }) {
     </View>
   );
 }
+
 export default withAuthenticator(App);
